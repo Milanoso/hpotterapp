@@ -1,0 +1,13 @@
+  <div class="container">
+    <h2><%= @character.name %></h2>
+    <p><%= @character.actor %></p>
+    <p><%= @character.review %></p>
+    <p><%= @character.image_url %></p>
+
+    <%= link_to "Edit", edit_character_path(@character) %>
+    <%= link_to "Delete",
+      character_path(@character),
+      data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+    %>
+    <%= link_to "Back to Characters", characters_path(@character) %>
+  </div>

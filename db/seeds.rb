@@ -12,7 +12,7 @@ Character.create!([{
   name: "Alastor Ojoloco",
   review: "Es personaje con un parche en el ojo ",
   actor: "Brendan Gleeson ",
-  image_url: "https://res.cloudinary.com/abdulaba/image/upload/v1669900365/Harry/Alastor-Ojoloco-Moody__seldth.j"
+  image_url: "https://res.cloudinary.com/abdulaba/image/upload/v1669900365/Harry/Alastor-Ojoloco-Moody__seldth.jpg"
   },
 
   {

@@ -1,0 +1,10 @@
+<h1>All Characters</h1>
+<div id="characters">
+  <% @characters.each do |character| %>
+    <li><%= link_to character.name, character_path(character) %></li>
+    <li><%= character.image_url %></li>
+    <li><%= character.review %></li>
+  <% end %>
+
+  <%= link_to "Create New Character", new_character_path(@character) %>
+</div>

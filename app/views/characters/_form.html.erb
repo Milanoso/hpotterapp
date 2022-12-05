@@ -1,0 +1,35 @@
+<div class="container py-5">
+  <div class="container pt-5">
+    <div class="container pt-4">
+      <div class="container-pro-new">
+        <div class="row">
+          <div class="col-6">
+            <h1 class="text-center pt-2 pb-2"><strong> New Character </strong></h1>
+              <%= simple_form_for (@character) do |f| %>
+                <div class="row">
+                  <%# current_user.ruc.empty? %>
+                  <div class="col-12 col-lg-6 pt-3">
+                    <%= f.input :name, label: "Characters name:", placeholder: "The Wizard" %>
+                  </div>
+                  <div class="col-12 col-lg-6 ">
+                    <%= f.input :actor , label: "Actors name:", placeholder: "Vin Diesel" %>
+                  </div>
+                  <div class="col-12 col-lg-6 ">
+                    <%= f.input :review, as: :text, label: "Characters Review:", placeholder: "Is a powerfull Wizard" %>
+                  </div>
+                </div>
+                <div class="">
+                  <%= f.input :photos, label: "Add Photo", as: :file,
+                  input_html: { multiple: true } %>
+                </div>
+                <div class="d-flex justify-content-around pt-3 pb-5">
+                  <%= f.submit "Enviar", class: "btn btn-ghost pb-3" %>
+                  <%= link_to "Salir", characters_path, class: "btn btn-ghost pb-3" %>
+                </div>
+              <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
